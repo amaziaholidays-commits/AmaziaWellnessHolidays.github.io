@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Club Amazia | Wellness • Resorts • Ayurveda</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#2bb673;   /* soothing green */
+  --secondary:#00a8cc; /* aqua */
+  --accent:#ff9f43;    /* warm vibrant */
+  --dark:#1e2a2f;
+  --light:#f4fbf8;
+}
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Poppins',sans-serif}
+body{background:var(--light);color:#333;line-height:1.6}
+header{
+  background:linear-gradient(135deg,var(--secondary),var(--primary));
+  color:white;padding:20px 8%;display:flex;align-items:center;justify-content:space-between;
+}
+.logo{font-size:28px;font-weight:700;letter-spacing:1px}
+nav a{color:white;margin-left:25px;text-decoration:none;font-weight:500}
+.hero{
+  min-height:88vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px 8%;
+  background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+  color:white;
+}
+.hero h1{font-size:48px;margin-bottom:15px}
+.hero p{font-size:18px;max-width:700px;margin:auto;margin-bottom:25px}
+.btn{display:inline-block;background:var(--accent);color:white;padding:14px 26px;border-radius:30px;text-decoration:none;font-weight:600;transition:.3s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.2)}
+section{padding:70px 8%}
+.section-title{text-align:center;margin-bottom:40px}
+.section-title h2{font-size:34px;color:var(--dark)}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px}
+.card{background:white;padding:28px;border-radius:14px;box-shadow:0 8px 20px rgba(0,0,0,.08);text-align:center}
+.card h3{margin:12px 0;color:var(--primary)}
+.card p{font-size:14px}
+.offers{background:linear-gradient(135deg,#fdf6e3,#ecfff6)}
+.highlight{font-size:22px;text-align:center;font-weight:600;color:var(--dark);margin-bottom:30px}
+.form-container{max-width:700px;margin:0 auto;background:white;padding:30px;border-radius:16px;box-shadow:0 10px 25px rgba(0,0,0,.1)}
+.form-group{margin-bottom:16px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #ddd;border-radius:8px}
+textarea{min-height:110px}
+footer{background:var(--dark);color:#ddd;text-align:center;padding:30px 10px}
+.contact{margin-top:10px}
+.contact a{color:#ffb86c;text-decoration:none}
+@media(max-width:700px){
+.hero h1{font-size:34px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">Club Amazia</div>
+<nav>
+<a href="#services">Services</a>
+<a href="#offers">Offers</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>Wellness • Resorts • Holiday Leisure</h1>
+<p>Lead management specialists in B2C wellness tourism. Ayurveda treatments, luxury staycations, and cashless AYUSH mediclaim assistance.</p>
+<a href="#contact" class="btn">Get Offers Now</a>
+</div>
+</section>
+
+<section id="services">
+<div class="section-title"><h2>Our Services</h2></div>
+<div class="services">
+<div class="card">
+<h3>Ayurveda Treatments</h3>
+<p>Panchakarma therapies and holistic healing programs from certified wellness centres.</p>
+</div>
+<div class="card">
+<h3>Resort & Holiday Packages</h3>
+<p>Curated domestic and international holiday leisure stays with premium hospitality.</p>
+</div>
+<div class="card">
+<h3>Cashless AYUSH Claims</h3>
+<p>We help you utilize your mediclaim coverage for approved Ayurveda & naturopathy treatments.</p>
+</div>
+<div class="card">
+<h3>Corporate & Family Plans</h3>
+<p>Customized wellness memberships, group bookings and exclusive staycation offers.</p>
+</div>
+</div>
+</section>
+
+<section id="offers" class="offers">
+<div class="section-title"><h2>Special Offers</h2></div>
+<p class="highlight">Mega Discounts on Ayurveda Treatment & Staycations</p>
+<p style="text-align:center;max-width:700px;margin:0 auto;">If your mediclaim includes AYUSH coverage, you may be eligible for cashless wellness treatments. Submit your details and our advisor will contact you.</p>
+</section>
+
+<section id="contact">
+<div class="section-title"><h2>Enquiry Form</h2></div>
+<div class="form-container">
+<form onsubmit="return submitForm(event)">
+<div class="form-group"><input type="text" placeholder="Full Name" required></div>
+<div class="form-group"><input type="tel" placeholder="Mobile Number" required></div>
+<div class="form-group"><input type="email" placeholder="Email Address" required></div>
+<div class="form-group">
+<select required>
+<option value="">Interested In</option>
+<option>Ayurveda Treatment</option>
+<option>Staycation</option>
+<option>Holiday Package</option>
+<option>Mediclaim AYUSH Assistance</option>
+</select>
+</div>
+<div class="form-group"><textarea placeholder="Message"></textarea></div>
+<button class="btn" type="submit" style="width:100%">Submit</button>
+</form>
+<p style="margin-top:15px;text-align:center;font-size:14px">Or email us directly: <b>Amaziaholidays@gmail.com</b></p>
+</div>
+</section>
+
+<footer id="contact">
+<p>© 2026 Club Amazia. All Rights Reserved.</p>
+<div class="contact">
+<p>Email: <a href="mailto:Amaziaholidays@gmail.com">Amaziaholidays@gmail.com</a></p>
+</div>
+</footer>
+
+<script>
+function submitForm(e){
+ e.preventDefault();
+ alert("Thank you! Our wellness advisor will contact you shortly.");
+ return false;
+}
+</script>
+</body>
+</html>
